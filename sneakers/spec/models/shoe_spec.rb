@@ -1,10 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Shoe, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+  # pending "add some examples to (or delete) #{__FILE__}"
 
-describe Shoe do
 
   let(:shoe){build(:shoe)}
 
@@ -34,6 +32,7 @@ describe Shoe do
     shoe = build(:shoe, year: nil)
     expect(shoe).to_not be_valid
   end
+
 
 
 end
